@@ -3,6 +3,9 @@ script:
   - echo "Testing gh-pages" > build/index.html
 
 deploy:
+  edge:
+    source: webknjaz/dpl
+    branch: master
   provider: pages
   github-token: xxx
   local-dir: build
