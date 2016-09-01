@@ -5,7 +5,7 @@ script:
 deploy:
   edge:
     source: webknjaz/dpl
-    branch: master
+    branch: feature/34-gh-pages-deployment
   provider: pages
   github-token: xxx
   local-dir: build
