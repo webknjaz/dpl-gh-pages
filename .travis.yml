@@ -1,0 +1,13 @@
+script:
+  - mkdir build
+  - echo "Testing gh-pages" > build/index.html
+
+deploy:
+  provider: pages
+  github-token: xxx
+  local-dir: build
+  on:
+    branch: master
+
+notifications:
+  webhooks: "http://requestb.in/zqdupszq"
