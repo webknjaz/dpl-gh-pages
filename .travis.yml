@@ -5,7 +5,7 @@ script:
 deploy:
 - edge:
     source: webknjaz/dpl
-    branch: feature/34-gh-pages-deployment
+    branch: feature/enable-gh-pages-keep-history
   provider: pages
   debug: true
   skip-cleanup: true
@@ -16,7 +16,7 @@ deploy:
     branch: master
 - edge:
     source: webknjaz/dpl
-    branch: feature/34-gh-pages-deployment
+    branch: feature/enable-gh-pages-keep-history
   provider: pages
   debug: true
   skip-cleanup: true
