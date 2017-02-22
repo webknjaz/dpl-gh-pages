@@ -7,7 +7,8 @@ deploy:
     source: webknjaz/dpl
     branch: feature/enable-gh-pages-keep-history
   provider: pages
-  debug: true
+  keep-history: true
+  verbose: true
   skip-cleanup: true
   github-token:
     secure: NM4/uPf4Sbw9bOsIu2VWDYY0M6LZcWxQOqqgnapT5UFm3PcVmqcKDrUl5qMReXVgQrQ8ph8mDtPSVIJLkEhk+Aeax8Nmr+G/4HTp1NcMZWjHFK470MPq4b9dwsSOXBUShEQ/IoFjysIAqlhLZZcj5ZoIUQlbZTfgq2AIr4MrfWvHE8QHmeKj4Pz3zk8ijJyo2LalIvpabJRr4nn4i0EQRMpJMgxmnUKKTEAhbRQU3aCBA5u69HLhpQGMNgmgp6pN4SBMI2KsJ+tZyuHw4+GrrLAH4vOPVrSMD9Znaap/oH8XAa/1UaxD1+QKLpwkN4IObq+gKFzCVHJCwpkWNGGwYH+JsQFHArD3+poMMwyMsUmg9XZD49SjHgmty2cTipo+ES903CaljEQe+rDs3ePC9GotH6C7m9jZ6UBmezxm8uISBQs7j2wVAOz3QMU4XFcS4osBZGW07G2q5EInCuidaH+X1+u8e+7EWoqyBcXYAS7a1OFruPuPEyq5iq0SnhIdHCyEa0JSZxo+VuNLkjeYhP+71s98OTPoqgOAj2T4k19rLfeJBuoCPjMZh9RQKg3oyQJjaQ/1lZIKKGZBFE4t+8Z0HrAiXLwUeqtPuyqp56R2+jbKNkIjNaEw9wug2vgLNmYd4xLloXrABiEnU84RtZdopGLf5vmwz+0zCtEFjGw=
@@ -18,7 +19,8 @@ deploy:
     source: webknjaz/dpl
     branch: feature/enable-gh-pages-keep-history
   provider: pages
-  debug: true
+  keep-history: true
+  verbose: true
   skip-cleanup: true
   github-token:
     secure: NM4/uPf4Sbw9bOsIu2VWDYY0M6LZcWxQOqqgnapT5UFm3PcVmqcKDrUl5qMReXVgQrQ8ph8mDtPSVIJLkEhk+Aeax8Nmr+G/4HTp1NcMZWjHFK470MPq4b9dwsSOXBUShEQ/IoFjysIAqlhLZZcj5ZoIUQlbZTfgq2AIr4MrfWvHE8QHmeKj4Pz3zk8ijJyo2LalIvpabJRr4nn4i0EQRMpJMgxmnUKKTEAhbRQU3aCBA5u69HLhpQGMNgmgp6pN4SBMI2KsJ+tZyuHw4+GrrLAH4vOPVrSMD9Znaap/oH8XAa/1UaxD1+QKLpwkN4IObq+gKFzCVHJCwpkWNGGwYH+JsQFHArD3+poMMwyMsUmg9XZD49SjHgmty2cTipo+ES903CaljEQe+rDs3ePC9GotH6C7m9jZ6UBmezxm8uISBQs7j2wVAOz3QMU4XFcS4osBZGW07G2q5EInCuidaH+X1+u8e+7EWoqyBcXYAS7a1OFruPuPEyq5iq0SnhIdHCyEa0JSZxo+VuNLkjeYhP+71s98OTPoqgOAj2T4k19rLfeJBuoCPjMZh9RQKg3oyQJjaQ/1lZIKKGZBFE4t+8Z0HrAiXLwUeqtPuyqp56R2+jbKNkIjNaEw9wug2vgLNmYd4xLloXrABiEnU84RtZdopGLf5vmwz+0zCtEFjGw=
