@@ -3,7 +3,10 @@ script:
   - echo "Testing gh-pages" > build/index.html
 
 deploy:
-- provider: pages
+- edge:
+    source: webknjaz/dpl
+    branch: feature/34-gh-pages-deployment
+  provider: pages
   debug: true
   skip-cleanup: true
   github-token:
@@ -11,7 +14,10 @@ deploy:
   local-dir: build
   on:
     branch: master
-- provider: pages
+- edge:
+    source: webknjaz/dpl
+    branch: feature/34-gh-pages-deployment
+  provider: pages
   debug: true
   skip-cleanup: true
   github-token:
