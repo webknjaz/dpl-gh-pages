@@ -5,7 +5,7 @@ script:
 deploy:
 - edge:
     source: webknjaz/dpl
-    branch: feature/enable-gh-pages-keep-history
+    branch: feature/enable-gh-pages-discard-history
   provider: pages
   keep-history: false
   verbose: true
