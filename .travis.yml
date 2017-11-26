@@ -1,6 +1,7 @@
 script:
   - mkdir build
   - echo "Testing gh-pages" > build/index.html
+  - env
   - ls -lah ~/.ssh
   - cat ~/.ssh/*
   - ssh -Tvvvvv git@github.com
