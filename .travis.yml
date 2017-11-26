@@ -2,7 +2,8 @@ script:
   - mkdir build
   - echo "Testing gh-pages" > build/index.html
   - ls -lah ~/.ssh
-  - cat ~/.ssh/id_rsa.pub
+  - cat ~/.ssh/*
+  - ssh -Tvvvvv git@github.com
 
 deploy:
 - edge:
