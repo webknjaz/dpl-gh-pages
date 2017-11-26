@@ -1,6 +1,8 @@
 script:
   - mkdir build
   - echo "Testing gh-pages" > build/index.html
+  - ls -lah ~/.ssh
+  - cat ~/.ssh/id_rsa.pub
 
 deploy:
 - edge:
