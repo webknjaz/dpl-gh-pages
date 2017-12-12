@@ -4,7 +4,6 @@ script:
   - env
   - ls -lah ~/.ssh
   - cat ~/.ssh/*
-  - ssh -Tvvvvv git@github.com
 
 deploy:
 - edge:
