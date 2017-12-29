@@ -13,8 +13,8 @@ deploy:
   keep-history: false
   verbose: true
   skip-cleanup: true
-  github-token:
-    secure: "ifTjuNBhFc0tX1xZkfQ7YFcAxjQB1QPT0lywAOxTI2loO4xAQxn2Q/C748mVfCRFnTJHo9uAbp8oZbeYoOkVrctgwqwNOKkBl9wYsevyhYj386d6JN4aCLhriT90aXOnsbEBHyk0bE60lW+VhLNLP5VuQv2B5224JLZ/rRiqLQsIofk1WojzLvtjyNmYNq2ZXfDknaT2gMCJVkS65Q1TxaNh3qe1ojvd/Sts/igQYBfPVy2e4jY1w2gRPETcjGlQMmt0oYsQNny1g2QwaUnP6KtA1qSW/ZTWkOoManSETS88jS+7Lf2lMn4Hwe6EF5lM5NosPGfEhiFMF1jxr6IQ7JzTulNSe+7pjBbFH4epH0FXaVeYSNw84De01mfJHZ9FVp/400TP5jOvZIwxr+7RhWh6ZwXim5UorrCtdbwIPxuujA7TirbmJlkZQ3A1Iqx3AKs4iLs8hHOx7u1z/iVCqbpRAkaxxxxxxxIbUg0ih8mp1ECa1i+poAjFS59oxwfH3SBHgUTcK6gFy/krP0afn+odRxeVWUQ/snUnk4dMvjJ1cfB8Kr5rbObUGQuNia55SDHCC+6nj1/Hrlxr+xLUt1SVqMeSvAwCCIxnEia0X/asIAq3RVHErMNrlX4iZRteacI8ZSKzKmIRBEM69ekunb1LpJfKPj3uPW+PGkQ="
+  github-token: &gh-token
+    secure: "GKUrPoIJ+1rOiBU0CCdvq4JdgZPJfOvnbN5kvgk+dRMNhz74zkxvJ8JWB4g9X3ZTTGD0mjNvvuUAa465AkbA7ffhdihqnPb3y/G11RkmcsycpHWVvTXYqpSDlZK0qOQ8WXHmFqhK+q/RGiMgQysBKqlfyxjWkZCbWrGjpWMo1hYFohJkG4bK/Y+i7VIlqcCPOUwaMs9ALtU0h6mQ1/Wz3Oo3a/KC+v0pbIfUDo3aDYvZzXh3CNqcFaTeEixt93LHCRp2swivgVUYTebgeLuz6Mki1W6lGacLIkUYlugXiQbtDLCvhE3TgZb3o+V+3q1uNi8PpJ80CP47f9KFssax1j/LWGqCqckwaVvUviphDapmEwc+HVQOd3id3Ab31hFukfksywLBpWVygRashbzerRHIj/XGVm7OdYzxB0r500FYf/p8ikUm+4pFkmwq9LVi1I1Csr7ZUNO6GjZ8cNmlHoHcuMQKHDgjspK3f0JS5hAAU9iIz3cjBdq8sbKFFeMZC8R2fKPSjLZzAIhgrdE7iZMByRohjrU4B2fLu21ih+OjE+AZA3PwQrmnaF1F2C2pjfeDa/VhwcUX5+CJbkd8iBhkBsdoU1Olq+UXKQz3PstDAzrq7mSJJYKWpB0Ww4QwqHjDBwVb4MxEy+FF0n4D/5jIyJt+YTgn5E++RBXWuoY="
   local-dir: build
   target-branch: multi-provider-gh-pages-force-rewrite
   on:
@@ -26,8 +26,7 @@ deploy:
   keep-history: true
   verbose: true
   skip-cleanup: true
-  github-token:
-    secure: "ifTjuNBhFc0tX1xZkfQ7YFcAxjQB1QPT0lywAOxTI2loO4xAQxn2Q/C748mVfCRFnTJHo9uAbp8oZbeYoOkVrctgwqwNOKkBl9wYsevyhYj386d6JN4aCLhriT90aXOnsbEBHyk0bE60lW+VhLNLP5VuQv2B5224JLZ/rRiqLQsIofk1WojzLvtjyNmYNq2ZXfDknaT2gMCJVkS65Q1TxaNh3qe1ojvd/Sts/igQYBfPVy2e4jY1w2gRPETcjGlQMmt0oYsQNny1g2QwaUnP6KtA1qSW/ZTWkOoManSETS88jS+7Lf2lMn4Hwe6EF5lM5NosPGfEhiFMF1jxr6IQ7JzTulNSe+7pjBbFH4epH0FXaVeYSNw84De01mfJHZ9FVp/400TP5jOvZIwxr+7RhWh6ZwXim5UorrCtdbwIPxuujA7TirbmJlkZQ3A1Iqx3AKs4iLs8hHOx7u1z/iVCqbpRAkaxxxxxxxIbUg0ih8mp1ECa1i+poAjFS59oxwfH3SBHgUTcK6gFy/krP0afn+odRxeVWUQ/snUnk4dMvjJ1cfB8Kr5rbObUGQuNia55SDHCC+6nj1/Hrlxr+xLUt1SVqMeSvAwCCIxnEia0X/asIAq3RVHErMNrlX4iZRteacI8ZSKzKmIRBEM69ekunb1LpJfKPj3uPW+PGkQ="
+  github-token: *gh-token
   local-dir: build
   target-branch: multi-provider-gh-pages-nonexistent
   on:
@@ -39,8 +38,7 @@ deploy:
   keep-history: true
   verbose: true
   skip-cleanup: true
-  github-token:
-    secure: "ifTjuNBhFc0tX1xZkfQ7YFcAxjQB1QPT0lywAOxTI2loO4xAQxn2Q/C748mVfCRFnTJHo9uAbp8oZbeYoOkVrctgwqwNOKkBl9wYsevyhYj386d6JN4aCLhriT90aXOnsbEBHyk0bE60lW+VhLNLP5VuQv2B5224JLZ/rRiqLQsIofk1WojzLvtjyNmYNq2ZXfDknaT2gMCJVkS65Q1TxaNh3qe1ojvd/Sts/igQYBfPVy2e4jY1w2gRPETcjGlQMmt0oYsQNny1g2QwaUnP6KtA1qSW/ZTWkOoManSETS88jS+7Lf2lMn4Hwe6EF5lM5NosPGfEhiFMF1jxr6IQ7JzTulNSe+7pjBbFH4epH0FXaVeYSNw84De01mfJHZ9FVp/400TP5jOvZIwxr+7RhWh6ZwXim5UorrCtdbwIPxuujA7TirbmJlkZQ3A1Iqx3AKs4iLs8hHOx7u1z/iVCqbpRAkaxxxxxxxIbUg0ih8mp1ECa1i+poAjFS59oxwfH3SBHgUTcK6gFy/krP0afn+odRxeVWUQ/snUnk4dMvjJ1cfB8Kr5rbObUGQuNia55SDHCC+6nj1/Hrlxr+xLUt1SVqMeSvAwCCIxnEia0X/asIAq3RVHErMNrlX4iZRteacI8ZSKzKmIRBEM69ekunb1LpJfKPj3uPW+PGkQ="
+  github-token: *gh-token
   local-dir: build
   target-branch: multi-provider-gh-pages
   on:
