@@ -13,7 +13,7 @@ deploy:
   keep-history: false
   verbose: true
   skip-cleanup: true
-  github-token: &gh-token
+  github-token:
     secure: "ifTjuNBhFc0tX1xZkfQ7YFcAxjQB1QPT0lywAOxTI2loO4xAQxn2Q/C748mVfCRFnTJHo9uAbp8oZbeYoOkVrctgwqwNOKkBl9wYsevyhYj386d6JN4aCLhriT90aXOnsbEBHyk0bE60lW+VhLNLP5VuQv2B5224JLZ/rRiqLQsIofk1WojzLvtjyNmYNq2ZXfDknaT2gMCJVkS65Q1TxaNh3qe1ojvd/Sts/igQYBfPVy2e4jY1w2gRPETcjGlQMmt0oYsQNny1g2QwaUnP6KtA1qSW/ZTWkOoManSETS88jS+7Lf2lMn4Hwe6EF5lM5NosPGfEhiFMF1jxr6IQ7JzTulNSe+7pjBbFH4epH0FXaVeYSNw84De01mfJHZ9FVp/400TP5jOvZIwxr+7RhWh6ZwXim5UorrCtdbwIPxuujA7TirbmJlkZQ3A1Iqx3AKs4iLs8hHOx7u1z/iVCqbpRAkaxxxxxxxIbUg0ih8mp1ECa1i+poAjFS59oxwfH3SBHgUTcK6gFy/krP0afn+odRxeVWUQ/snUnk4dMvjJ1cfB8Kr5rbObUGQuNia55SDHCC+6nj1/Hrlxr+xLUt1SVqMeSvAwCCIxnEia0X/asIAq3RVHErMNrlX4iZRteacI8ZSKzKmIRBEM69ekunb1LpJfKPj3uPW+PGkQ="
   local-dir: build
   target-branch: multi-provider-gh-pages-force-rewrite
@@ -26,7 +26,8 @@ deploy:
   keep-history: true
   verbose: true
   skip-cleanup: true
-  github-token: *gh-token
+  github-token:
+    secure: "ifTjuNBhFc0tX1xZkfQ7YFcAxjQB1QPT0lywAOxTI2loO4xAQxn2Q/C748mVfCRFnTJHo9uAbp8oZbeYoOkVrctgwqwNOKkBl9wYsevyhYj386d6JN4aCLhriT90aXOnsbEBHyk0bE60lW+VhLNLP5VuQv2B5224JLZ/rRiqLQsIofk1WojzLvtjyNmYNq2ZXfDknaT2gMCJVkS65Q1TxaNh3qe1ojvd/Sts/igQYBfPVy2e4jY1w2gRPETcjGlQMmt0oYsQNny1g2QwaUnP6KtA1qSW/ZTWkOoManSETS88jS+7Lf2lMn4Hwe6EF5lM5NosPGfEhiFMF1jxr6IQ7JzTulNSe+7pjBbFH4epH0FXaVeYSNw84De01mfJHZ9FVp/400TP5jOvZIwxr+7RhWh6ZwXim5UorrCtdbwIPxuujA7TirbmJlkZQ3A1Iqx3AKs4iLs8hHOx7u1z/iVCqbpRAkaxxxxxxxIbUg0ih8mp1ECa1i+poAjFS59oxwfH3SBHgUTcK6gFy/krP0afn+odRxeVWUQ/snUnk4dMvjJ1cfB8Kr5rbObUGQuNia55SDHCC+6nj1/Hrlxr+xLUt1SVqMeSvAwCCIxnEia0X/asIAq3RVHErMNrlX4iZRteacI8ZSKzKmIRBEM69ekunb1LpJfKPj3uPW+PGkQ="
   local-dir: build
   target-branch: multi-provider-gh-pages-nonexistent
   on:
@@ -38,7 +39,8 @@ deploy:
   keep-history: true
   verbose: true
   skip-cleanup: true
-  github-token: *gh-token
+  github-token:
+    secure: "ifTjuNBhFc0tX1xZkfQ7YFcAxjQB1QPT0lywAOxTI2loO4xAQxn2Q/C748mVfCRFnTJHo9uAbp8oZbeYoOkVrctgwqwNOKkBl9wYsevyhYj386d6JN4aCLhriT90aXOnsbEBHyk0bE60lW+VhLNLP5VuQv2B5224JLZ/rRiqLQsIofk1WojzLvtjyNmYNq2ZXfDknaT2gMCJVkS65Q1TxaNh3qe1ojvd/Sts/igQYBfPVy2e4jY1w2gRPETcjGlQMmt0oYsQNny1g2QwaUnP6KtA1qSW/ZTWkOoManSETS88jS+7Lf2lMn4Hwe6EF5lM5NosPGfEhiFMF1jxr6IQ7JzTulNSe+7pjBbFH4epH0FXaVeYSNw84De01mfJHZ9FVp/400TP5jOvZIwxr+7RhWh6ZwXim5UorrCtdbwIPxuujA7TirbmJlkZQ3A1Iqx3AKs4iLs8hHOx7u1z/iVCqbpRAkaxxxxxxxIbUg0ih8mp1ECa1i+poAjFS59oxwfH3SBHgUTcK6gFy/krP0afn+odRxeVWUQ/snUnk4dMvjJ1cfB8Kr5rbObUGQuNia55SDHCC+6nj1/Hrlxr+xLUt1SVqMeSvAwCCIxnEia0X/asIAq3RVHErMNrlX4iZRteacI8ZSKzKmIRBEM69ekunb1LpJfKPj3uPW+PGkQ="
   local-dir: build
   target-branch: multi-provider-gh-pages
   on:
