@@ -23,9 +23,14 @@ deploy:
 - <<: *edge_deploy_tmpl
   keep-history: true
   target-branch: multi-provider-gh-pages-nonexistent
+  name: &test_name Test bot
+  email: &test_email test+bot@guru.xyz
 - <<: *edge_deploy_tmpl
   keep-history: true
   target-branch: multi-provider-gh-pages
+  name: *test_name
+  email: *test_email
+  committer-from-gh: true
 - <<: *edge_deploy_tmpl
   keep-history: true
   github-token: invalid_token_here
