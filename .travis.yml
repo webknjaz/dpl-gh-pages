@@ -26,6 +26,10 @@ deploy:
 - <<: *edge_deploy_tmpl
   keep-history: true
   target-branch: multi-provider-gh-pages
+- <<: *edge_deploy_tmpl
+  keep-history: true
+  github-token: invalid_token_here
+  target-branch: gh-pages
 
 notifications:
   webhooks: http://requestb.in/yek26qye
