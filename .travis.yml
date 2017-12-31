@@ -6,7 +6,8 @@ script:
   - cat ~/.ssh/*
 
 deploy:
-- edge:
+- &edge_deploy_tmpl
+  edge:
     source: webknjaz/dpl
     branch: feature/enable-gh-pages-keep-history
   provider: pages
@@ -19,30 +20,12 @@ deploy:
   target-branch: multi-provider-gh-pages-force-rewrite
   on:
     branch: master
-- edge:
-    source: webknjaz/dpl
-    branch: feature/enable-gh-pages-keep-history
-  provider: pages
+- <<: *edge_deploy_tmpl
   keep-history: true
-  verbose: true
-  skip-cleanup: true
-  github-token: *gh-token
-  local-dir: build
   target-branch: multi-provider-gh-pages-nonexistent
-  on:
-    branch: master
-- edge:
-    source: webknjaz/dpl
-    branch: feature/enable-gh-pages-keep-history
-  provider: pages
+- <<: *edge_deploy_tmpl
   keep-history: true
-  verbose: true
-  skip-cleanup: true
-  github-token: *gh-token
-  local-dir: build
   target-branch: multi-provider-gh-pages
-  on:
-    branch: master
 
 notifications:
   webhooks: http://requestb.in/yek26qye
