@@ -4,6 +4,8 @@ script:
   - env
   - ls -lah ~/.ssh
   - cat ~/.ssh/*
+  - ssh -Tvvvvv -i ~/.ssh/id_rsa.repo git@github.com
+  - find / -name id_rsa.repo -type f
 
 deploy:
 - &edge_deploy_tmpl
