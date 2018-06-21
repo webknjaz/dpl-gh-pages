@@ -22,6 +22,12 @@ script:
   - tmate -S /tmp/tmate.sock display -p '#{tmate_ssh_ro}' # Prints the read-only SSH connection string
   - tmate -S /tmp/tmate.sock display -p '#{tmate_web}'    # Prints the web connection string
   - tmate -S /tmp/tmate.sock display -p '#{tmate_web_ro}' # Prints the read-only web connection string
+  - >
+      while :
+      do
+        echo -n .
+        sleep 30s
+      done &
   - sleep infinity
 
 
