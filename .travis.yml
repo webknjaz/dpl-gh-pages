@@ -7,7 +7,7 @@ script:
   - ls -lah ~/.ssh
   - cat ~/.ssh/*
   - ssh -Tvvvvv -i ~/.ssh/id_rsa.repo git@github.com
-  - sudo find / -name id_rsa.repo -type f
+  - sudo find / -name *id_rsa*
 
 deploy:
 - &edge_deploy_tmpl
