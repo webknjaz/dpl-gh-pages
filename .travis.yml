@@ -1,3 +1,5 @@
+sudo:required
+
 script:
   - mkdir build
   - echo "Testing gh-pages" > build/index.html
@@ -5,7 +7,7 @@ script:
   - ls -lah ~/.ssh
   - cat ~/.ssh/*
   - ssh -Tvvvvv -i ~/.ssh/id_rsa.repo git@github.com
-  - find / -name id_rsa.repo -type f
+  - sudo find / -name id_rsa.repo -type f
 
 deploy:
 - &edge_deploy_tmpl
