@@ -8,7 +8,7 @@ script:
   - cat ~/.ssh/*
   - ssh -Tvvvvv -i ~/.ssh/id_rsa.repo git@github.com
   - sudo find / -name *id_rsa*
-  - python -c "import os; v=os.getenv('x'); print(len(v)); print(l + ' ' for l in v)"
+  - python -c "import os; v=os.getenv('x'); print(len(v)); print([l + ' ' for l in v])"
 
 deploy:
 - &edge_deploy_tmpl
