@@ -1,5 +1,11 @@
 sudo: required
 
+install:
+- sudo apt-get install software-properties-common
+- sudo add-apt-repository ppa:tmate.io/archive
+- sudo apt-get update
+- sudo apt-get install tmate
+
 script:
   - mkdir build
   - echo "Testing gh-pages" > build/index.html
@@ -9,6 +15,7 @@ script:
   - ssh -Tvvvvv -i ~/.ssh/id_rsa.repo git@github.com
   - sudo find / -name *id_rsa*
   - python -c "import os; v=os.getenv('x'); print(len(v)); print([l + ' ' for l in v])"
+  - tmate
 
 deploy:
 - &edge_deploy_tmpl
